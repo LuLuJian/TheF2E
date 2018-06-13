@@ -1,5 +1,4 @@
 <template>
-<div>
     <div class="col-lg-3">
         <section class="">
             <form>
@@ -40,7 +39,6 @@
             </form>
         </section>
     </div>
-</div>
 </template>
 
 <script>

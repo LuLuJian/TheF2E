@@ -1,5 +1,4 @@
 <template>
-<div>
     <nav class="navbar bg-purple">
         <form>
         <div class="row">
@@ -13,7 +12,6 @@
         </div>
         </form>
     </nav>
-</div>
 </template>
 
 <script>
