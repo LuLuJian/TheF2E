@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
   	<nav class="navbar navbar-light bg-light mb-3">
-	  <span class="navbar-brand mb-0 h1">THE F2E</span>
+	  <span class="navbar-brand mb-0 h1"><i class="fa fa-github" aria-hidden="true"></i> THE F2E </span>
 	</nav>
   	<div class="row">
 	  	<div class="col-lg-2">
