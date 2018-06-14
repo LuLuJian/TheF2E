@@ -21,25 +21,23 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="row mt-3">
-                        <div class="col-lg-2">
-
-                            <div class="row card">
-                              
-                                    <h5 class="card-title">Kogi Cosby sweater.</h5>
-                                    <h6 class="card-subtitle mb-2">Ethan Foster</h6>
-       
+                        <div class="row  col-lg-3">
+                         
+                            <div style="width: 220px;background-color: #d7d7d7;height: 220px;">
+                                
                             </div>
+                            
                         </div>
-                        <div class="col-lg-10">
-                            <div class="row card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Kogi Cosby sweater.</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <h6 class="card-subtitle mb-2">Ethan Foster</h6>
-                                    <small><i class="fa fa-map-marker" aria-hidden="true"></i> Kaohsiung City</small>
-                                    <small><i class="fa fa-calendar" aria-hidden="true"></i> 2018/5/24 - 2018/5/31</small>
-                                </div>
+                        <div class="row col-lg-9">
+                            
+                            <div style="border: 1px solid #d7d7d7;height: 220px;padding: 30px;">
+                                <h5 class="card-title">Kogi Cosby sweater.</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h6 class="card-subtitle mb-2">Ethan Foster</h6>
+                                <small><i class="fa fa-map-marker" aria-hidden="true"></i> Kaohsiung City</small>
+                                <small><i class="fa fa-calendar" aria-hidden="true"></i> 2018/5/24 - 2018/5/31</small>
                             </div>
+                           
                         </div>
                     </div>
                 </div>  
@@ -80,8 +78,8 @@ $show-count-color:#7828B4;
     display: inline-block;
     -webkit-border-radius: 20px;
             border-radius: 20px;
-    height: 20px;
-    padding: 15px;
+    height: 10px;
+    padding: 10px;
     margin: 5px;
     vertical-align: middle; 
     width: 20px;
