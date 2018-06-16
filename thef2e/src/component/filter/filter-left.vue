@@ -16,11 +16,11 @@
                         <label>Date</label>
                         <div class="form-group form-inline pull-right">
                             <label for="date-from" class="label-subtitle">from</label>
-                            <input type="text" class="form-control" id="date-from" name="">
+                            <input type="date" class="form-control" id="date-from" name="">
                         </div>
                         <div class="form-group form-inline pull-right">
                             <label for="date-to" class="label-subtitle">to</label>
-                            <input type="text" class="form-control" id="date-to" name="">
+                            <input type="date" class="form-control" id="date-to" name="">
                         </div>
                     </div>
                     <div class="left-categories mt-3 col-lg-12">
