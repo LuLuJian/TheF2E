@@ -20,22 +20,24 @@
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <div class="row mt-3">
-                        <div class="row  col-lg-3">
+                    <div v-for="(item, index) in records" 
+                         class="row mt-3" 
+                    >
+                        <div class="row col-lg-3">
                          
                             <div style="width: 220px;background-color: #d7d7d7;height: 220px;">
-                                
+                                <img :src="item.Picture1">
                             </div>
                             
                         </div>
                         <div class="row col-lg-9">
                             
                             <div style="border: 1px solid #d7d7d7;height: 220px;padding: 30px;">
-                                <h5 class="card-title">Kogi Cosby sweater.</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <h6 class="card-subtitle mb-2">Ethan Foster</h6>
-                                <small><i class="fa fa-map-marker" aria-hidden="true"></i> Kaohsiung City</small>
-                                <small><i class="fa fa-calendar" aria-hidden="true"></i> 2018/5/24 - 2018/5/31</small>
+                                <h5 class="card-title">{{ item.Name}}</h5>
+                                <p class="card-text">{{ item.Description.length}}</p>
+                                <h6 class="card-subtitle mb-2">{{ item.Ticketinfo}}</h6>
+                                <small><i class="fa fa-map-marker" aria-hidden="true"></i> {{ item.Zone}}</small>
+                                <small><i class="fa fa-calendar" aria-hidden="true"></i> {{ item.Opentime}}</small>
                             </div>
                            
                         </div>
@@ -48,7 +50,24 @@
 
 <script>
 export default {
-    name: 'FilterRight'
+    name: 'FilterRight',
+    props: ['records'],
+    data(){
+        return {
+            // length: this.records[0].Description,
+            maxLength: 20,
+        }
+    },
+    watch: {
+        textLenght(){
+            if(this.records[i].Description.length > this.maxLength){
+                console.log(this.Description);
+            }
+        }
+    },
+    methods: {
+
+    }
 }
 </script>
 
