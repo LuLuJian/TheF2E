@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar bg-purple">
+    <nav class="col-lg-12 navbar bg-purple">
         <form>
             <div class="row">
                 <div class="col-lg-3">

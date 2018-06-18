@@ -1,6 +1,6 @@
 <template>
     <div class="col-lg-3">
-        <section class="">
+        <section>
             <form>
                 <div class="row bg-gray">
                     <div class="left-location col-lg-12">
@@ -70,9 +70,7 @@ $border-gray: #d7d7d7;
 .bg-gray {
 
 	background-color: $left-bg-gray;
-    margin-left: 30px;
     padding: 10px;
-    width: 300px;
     
     .left-location{
         @include label;

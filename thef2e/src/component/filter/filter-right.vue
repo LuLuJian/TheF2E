@@ -23,14 +23,14 @@
                     <div v-for="(item, index) in records" 
                          class="row mt-3" 
                     >
-                        <div class="row col-lg-3">
+                        <div class="col-lg-3 pr-0">
                          
-                            <div style="width: 220px;background-color: #d7d7d7;height: 220px;">
-                                <img :src="item.Picture1">
+                            <div style="width: 233px;height: 220px;background-color: #d7d7d7;">
+                                <img :src="item.Picture1" style="width:100%;background-color: #d7d7d7;height: 100%;">
                             </div>
                             
                         </div>
-                        <div class="row col-lg-9">
+                        <div class="col-lg-9 pl-5">
                             
                             <div style="border: 1px solid #d7d7d7;height: 220px;padding: 30px;">
                                 <h5 class="card-title">{{ item.Name}}</h5>
@@ -60,9 +60,9 @@ export default {
     },
     watch: {
         textLenght(){
-            if(this.records[i].Description.length > this.maxLength){
-                console.log(this.Description);
-            }
+            // if(this.records[i].Description.length > this.maxLength){
+            //     console.log(this.Description);
+            // }
         }
     },
     methods: {

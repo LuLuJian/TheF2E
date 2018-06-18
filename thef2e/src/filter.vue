@@ -1,6 +1,8 @@
 <template>
   <div>
-    <FilterNav></FilterNav>
+    <div class="row"> 
+        <FilterNav></FilterNav>
+    </div> 
     <div class="row">
         <FilterLeft></FilterLeft>
         <FilterRight :records="info.result.records"></FilterRight>
