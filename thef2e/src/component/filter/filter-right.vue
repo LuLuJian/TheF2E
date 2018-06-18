@@ -47,7 +47,9 @@
 </template>
 
 <script>
-
+export default {
+    name: 'FilterRight'
+}
 </script>
 
 <style lang="scss">

@@ -1,21 +1,23 @@
 <template>
     <nav class="navbar bg-purple">
         <form>
-        <div class="row">
-            <div class="col-lg-3">
-                <p class="search-title text-center">HaveFun</p>
+            <div class="row">
+                <div class="col-lg-3">
+                    <p class="search-title text-center">HaveFun</p>
+                </div>
+                <div class="col-lg-9">
+                    <i class="fa fa-search fa-lg" aria-hidden="true" style="color:#fff;"></i>
+                    <input class="search-input" type="search" placeholder="Explore your activities" v-on:click="goBack()">
+                </div>
             </div>
-            <div class="col-lg-9">
-                <i class="fa fa-search fa-lg" aria-hidden="true" style="color:#fff;"></i>
-                <input class="search-input" type="search" placeholder="Explore your activities">
-            </div>
-        </div>
         </form>
     </nav>
 </template>
 
 <script>
-
+export default {
+    name: 'FilterNav',
+}
 </script>
 
 <style lang="scss">

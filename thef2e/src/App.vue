@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div id="app" class="container-fluid">
   	<nav class="navbar navbar-light bg-light mb-3">
 	  <span class="navbar-brand mb-0 h1"><i class="fa fa-github" aria-hidden="true"></i> THE F2E </span>
 	</nav>
@@ -18,20 +18,20 @@
 </template>
 
 <script>
-import VueRouter from 'vue-router';
+import VueRouter from 'vue-router'
+import axios from 'axios'
 import ToDoList from './todolist.vue'
 import Filter from './filter.vue'
 
+const routes = [
+        { path: '/todolist' , component: ToDoList },
+        { path: '/filter' , component: Filter },
+    ]
+
 export default {
   router: new VueRouter({
-    routes: [
-      { path: '/todolist' , component: ToDoList },
-      { path: '/filter' , component: Filter },
-    ],
+      routes
   })
 }
 </script>
 
-<style lang="scss">
-
-</style>

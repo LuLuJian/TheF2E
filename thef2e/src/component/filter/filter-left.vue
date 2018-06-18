@@ -42,7 +42,9 @@
 </template>
 
 <script>
-
+export default {
+    name: 'FilterLeft'
+}
 </script>
 
 <style lang="scss">
