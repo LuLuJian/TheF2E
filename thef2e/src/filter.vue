@@ -5,7 +5,9 @@
     </div> 
     <div class="row">
         <FilterLeft></FilterLeft>
-        <FilterRight :records="info.result.records"></FilterRight>
+        <FilterRight 
+        :records="info.result.records"
+        ></FilterRight>
     </div>
   </div>
 </template>

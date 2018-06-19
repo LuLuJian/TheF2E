@@ -20,21 +20,22 @@
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <div v-for="(item, index) in records" 
+                    <div v-for="(item, index) in records"
                          class="row mt-3" 
                     >
                         <div class="col-lg-3 pr-0">
                          
-                            <div style="width: 233px;height: 220px;background-color: #d7d7d7;">
+                            <div style="height: 220px;background-color: #d7d7d7;">
                                 <img :src="item.Picture1" style="width:100%;background-color: #d7d7d7;height: 100%;">
                             </div>
                             
                         </div>
-                        <div class="col-lg-9 pl-5">
+                        <div class="col-lg-9 pl-0">
                             
                             <div style="border: 1px solid #d7d7d7;height: 220px;padding: 30px;">
                                 <h5 class="card-title">{{ item.Name}}</h5>
                                 <p class="card-text">{{ item.Description.length}}</p>
+                                <p class="card-text" v-text="textLenght"></p>
                                 <h6 class="card-subtitle mb-2">{{ item.Ticketinfo}}</h6>
                                 <small><i class="fa fa-map-marker" aria-hidden="true"></i> {{ item.Zone}}</small>
                                 <small><i class="fa fa-calendar" aria-hidden="true"></i> {{ item.Opentime}}</small>
@@ -60,9 +61,11 @@ export default {
     },
     watch: {
         textLenght(){
-            // if(this.records[i].Description.length > this.maxLength){
-            //     console.log(this.Description);
-            // }
+            const WORD_NUMBERS = 28;
+            if (this.records.Description.length > WORD_NUMBERS) {
+                return this.records.Description.slice(0, WORD_NUMBERS) + '...';
+            }
+            return this.records.Description;
         }
     },
     methods: {
