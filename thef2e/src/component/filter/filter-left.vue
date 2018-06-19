@@ -26,13 +26,10 @@
                     <div class="left-categories mt-3 col-lg-12">
                         <label>Categories</label>
                         <div class="checkbox">
-                            <label class="label-subtitle"><input type="checkbox" value=""> All</label>
+                            <label class="label-subtitle"><input type="checkbox" value=""> 免費參觀</label>
                         </div>
                         <div class="checkbox">
-                            <label class="label-subtitle"><input type="checkbox" value=""> Food</label>
-                        </div>
-                        <div class="checkbox disabled">
-                            <label class="label-subtitle"><input type="checkbox" value="" disabled> Outdoor</label>
+                            <label class="label-subtitle"><input type="checkbox" value=""> 全天候開放</label>
                         </div>
                     </div>
                 </div>
