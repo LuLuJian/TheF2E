@@ -5,8 +5,8 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: './dist/', // --build
-     //publicPath: '/dist/', --dev
+    //publicPath: './dist/', // --build
+     publicPath: '/dist/', //--dev
     filename: 'build.js'
   },
   module: {
