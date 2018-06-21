@@ -1,5 +1,5 @@
 <template>
-    <nav class="col-lg-12 navbar bg-purple">
+    <nav class="col-lg-12 navbar-block bg-purple">
         <form>
             <div class="row">
                 <div class="col-lg-3">
@@ -37,7 +37,7 @@ input {
     opacity: .5;
 }
 
-.navbar {
+.navbar-block {
     display: block;
     .search-title {
   	    color: $nav-title-color;
