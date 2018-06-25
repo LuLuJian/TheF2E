@@ -6,6 +6,7 @@ import App from './App.vue'
 import 'bootstrap/scss/bootstrap.scss'
 import 'bootstrap'
 import 'font-awesome/css/font-awesome.css';
+import VeLine from 'v-charts/lib/line.common';
 
 Vue.use(VueRouter);
 //global

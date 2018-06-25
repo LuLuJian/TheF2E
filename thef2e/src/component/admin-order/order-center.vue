@@ -1,17 +1,34 @@
 <template>
 	<div class="col-lg-12">
 	 <div class="row">
-	    <div class="col-lg-12 mt-3" style="height: 100px;">
-	    	<div class="w-100 h-100 p-3" style="background-color:#fff;">
-	         <p class="h4">Activity</p>
-	      
+	    <div class="col-lg-12 mt-3">
+	    	<div class="p-3" style="background-color:#fff;">
+	         	<p class="h4">Activity</p>
+	      		<ve-line :data="chartData"></ve-line>
 	  		</div>
 	    </div>
 	  </div>
 	</div>
 </template>
 <script>
+import VeLine from 'v-charts/lib/line.common'
 export default {
-    name: 'OrderCenter'
+    name: 'OrderCenter',
+    components: { VeLine },
+  data () {
+    return {
+      chartData: {
+        columns: ['date', '訪問用戶' , '訂單數'],
+        rows: [
+          { 'date': '01-01', '訪問用戶': 2231 , '訂單數': 1831},
+          { 'date': '01-01', '訪問用戶': 3341 , '訂單數': 1431},
+          { 'date': '01-01', '訪問用戶': 2331 , '訂單數': 1331},
+          { 'date': '01-01', '訪問用戶': 3231 , '訂單數': 1231},
+          { 'date': '01-01', '訪問用戶': 2241 , '訂單數': 1131},
+          { 'date': '01-01', '訪問用戶': 1531 , '訂單數': 231}
+        ]
+      }
+    }
+  }
 }
 </script>
