@@ -9,6 +9,7 @@
 			  <li class="list-group-item"><router-link to="/todolist">Lesson1-ToDoList</router-link></li>
 			  <li class="list-group-item"><router-link to="/filter">Lesson2-Filter</router-link></li>
 			  <li class="list-group-item"><router-link to="/admin-order">Lesson3-AdminOrder</router-link></li>
+			  <li class="list-group-item"><router-link to="/product-gallery">Lesson4-ProductGallery</router-link></li>
 			</ul>
 		</div>
 		<div class="col-lg-10">
@@ -24,11 +25,13 @@ import axios from 'axios'
 import ToDoList from './todolist.vue'
 import Filter from './filter.vue'
 import AdminOrder from './admin-order.vue'
+import ProductGallery from './product-gallery'
 
 const routes = [
         { path: '/todolist' , component: ToDoList },
         { path: '/filter' , component: Filter },
         { path: '/admin-order' , component: AdminOrder },
+        { path: '/product-gallery' , component: ProductGallery },
     ]
 
 export default {
