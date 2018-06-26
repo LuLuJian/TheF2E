@@ -3,9 +3,9 @@
     <div class="row"> 
         <FilterNav></FilterNav>
         <FilterLeft></FilterLeft>
-        <FilterRight 
+        <!-- <FilterRight 
         :records="info.result.records"
-        ></FilterRight>
+        ></FilterRight> -->
     </div>
   </div>
 </template>
