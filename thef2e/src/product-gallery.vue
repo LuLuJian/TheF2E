@@ -73,6 +73,12 @@ $green-color: #50e3c2;
   font-weight: bold;
 }
 
+@mixin img-position{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
 .grid-container {
   width: 960px;
   display: grid;
@@ -113,13 +119,10 @@ $green-color: #50e3c2;
 
 //content block-01
 .block-01 {
-  grid-area: header;
   grid-column: 2 / 6;
   grid-row: 3 / 6;
-  background-position: center;
-  background-size: cover;
+  @include img-position;
   background-image: url(https://ppt.cc/fcE7sx@.jpg);
-  position: relative;
 }
 
 .content-01{
@@ -179,13 +182,10 @@ $green-color: #50e3c2;
 
 .block-02 {
   background-color: #748CC5;
-  grid-area: main;
   grid-column: 7 / 9;
   grid-row: 4 / 6;
-  background-position: center;
-  background-size: cover;
+  @include img-position;
   background-image: url(https://ppt.cc/faRd0x@.jpg);
-  position: relative;
   top: -30px;
 }
 
@@ -247,13 +247,10 @@ $green-color: #50e3c2;
 }
 
 .block-03 {
-  grid-area: header;
   grid-column: 2 / 6;
   grid-row: 8 / 10;
-  background-position: center;
-  background-size: cover;
+  @include img-position;
   background-image: url(https://ppt.cc/f1MFix@.jpg);
-  position: relative;
 }
 
 .content-03{
@@ -289,8 +286,8 @@ $green-color: #50e3c2;
     font-size: $md-font;
     font-weight: bold;
     position: absolute;
-    right: -30px;
-    bottom: -50px;
+    right: -50px;
+    bottom: -55px;
   }
 
   .outline-box{
@@ -299,10 +296,18 @@ $green-color: #50e3c2;
     width: 200px;
     transform: translate(120%, -50%);
     position: absolute;
-    bottom: 0px;
+    top: 150px;
     z-index: -1;
   }
-
+  .solid-box{
+    background: $green-color;
+    height: 200px;
+    width: 180px;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    z-index: -1;
+  }
   .zebra{
     height: 100px;
     @include zebra;

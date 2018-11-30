@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="row"> 
+    <div class="row">
         <FilterNav></FilterNav>
         <FilterLeft></FilterLeft>
-        <!-- <FilterRight 
+        <FilterRight
         :records="info.result.records"
-        ></FilterRight> -->
+        ></FilterRight>
     </div>
   </div>
 </template>
@@ -31,7 +31,9 @@ export default {
         //this.$http = axios
         this.$http
         .get('https://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97')
-        .then(response => (this.info = response.data))
+        .then(response => (
+            this.info = response.data
+        ))
     }
 }
 </script>
