@@ -12,7 +12,9 @@ Vue.use(VueRouter);
 //global
 Vue.prototype.$http = axios;
 
-new Vue({
+var vm = new Vue({
   el: '#app',
   render: h => h(App)
 })
+
+global.vm = vm;
