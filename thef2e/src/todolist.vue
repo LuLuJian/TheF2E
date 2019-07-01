@@ -14,9 +14,11 @@
 		<div class="col-lg-6">
 			<ul>
 				<li v-for="(item, index) in items" :index="index">
-					<input type="text" v-if="item.show" @keyup.enter="onEnter(item, index)" v-model="items[index].newItem" class="form-control item" placeholder="輸入待辦事項..." >
-					<span class="item" v-if="!item.show" @dblclick="edit(item, index)">{{ item.newItem }}</span>
-					<button type="button" class="btn btn-info" @click="edit(item, index)">編輯</button> <button type="button" class="btn btn-danger" @click="removeItem(index)">刪除</button>
+					<input type="text" v-if="item.editShow" @blur="onEnter(item, index)" v-model="items[index].newItem" class="form-control item" placeholder="輸入待辦事項..." >
+					<span class="item" v-if="!item.editShow" @dblclick="edit(item, index)">{{ item.newItem }}</span>
+
+					<button type="button" class="btn btn-info" @click="edit(item, index)">編輯</button>
+					<button type="button" class="btn btn-danger" @click="removeItem(index)">刪除</button>
 				</li>
 			</ul>
 		</div>
@@ -27,26 +29,25 @@ export default {
     name: 'ToDoList',
     data(){
         return{
-        	show: '',
         	newItem: '',
-        	editItem: '',
-            items:[]
+            items:[],
+        	editShow: '',
+        	editItem: ''
         }
     },
     methods:{
     	addItem(){
-    		this.items.push({newItem:this.newItem, show:false})
+    		this.items.push({newItem:this.newItem, editShow:false})
     		this.newItem = '';
     	},
     	removeItem(index){
     		vm.$delete(this.items, index)
     	},
-    	onEnter(item, index){
-    		this.items[index].show = false;
-
-    	},
     	edit(item, index){
-    		this.items[index].show = !this.items[index].show;
+    		this.items[index].editShow = !this.items[index].editShow;
+    	},
+    	onEnter(item, index){
+    		this.items[index].editShow = false;
     	}
     }
 }
